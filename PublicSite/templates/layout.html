@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonServer</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "styles/globalstyles.css" %}">
+</head>
+<body>
+    <h1>PythonServer</h1>
+    <ul>
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+        <li>
+            <a href="/hola-mundo">Hola mundo</a>
+        </li>
+        <li>
+            <a href="/sobre-nosotros">Sobre nosotros</a>
+        </li>
+    </ul>
+    <hr />
+
+    {% block content %}{% endblock content %}
+</body>
+</html>
