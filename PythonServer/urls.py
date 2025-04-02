@@ -23,4 +23,8 @@ urlpatterns = [
     path('', PublicSite.views.index),
     path('hola-mundo/', PublicSite.views.hola_mundo),
     path('sobre-nosotros/', PublicSite.views.sobre_nosotros),
+    path('usuarios/', PublicSite.views.usuarios),
+    path('usuario/<str:usuario>/', PublicSite.views.usuario),
+    path('crear-usuario/<str:nombre>/<str:email>/<str:usuario>/', PublicSite.views.crear_usuario),
+    path('actualizar-usuario/<int:id>/<str:nombre>/<str:email>/<str:usuario>/', PublicSite.views.actualizar_usuario),
 ]
